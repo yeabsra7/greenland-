@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html >
+<head>   
+    <title>Beautiful Landscapes</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&amp;display=swap" rel="stylesheet">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head> 
+  <body>
+  <div class="wrapper"> 
+      <form class="RMM">
+        <h1>Register</h1>
+        <div class="input-box">
+          <input type="text" placeholder="Username" required>  
+          <i class='bx bxs-user'></i>
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="Email" required>  
+            <i class='bx bxs-envelope'></i>
+          </div>
+        <div class="input-box">
+            <input type="password" placeholder="Password" required>
+            <i class='bx bxs-lock-alt' ></i>  
+          </div>
+          <div class="remember-forgot">
+            <label><input type="radio">Male</label>
+            </div>
+            <div class="remember-forgot">
+              <label><input type="radio">Female</label>
+              </div>
+             <br> <br>
+          <div class="remember-forgot">
+            <label><input type="checkbox">Remember Me</label>
+            </div>
+            <button type="submit" class="btn"> <a href="home.html">Register</a></button>
+          <div class="register-link">
+            <p>Go to <a href="index.html">Login</a></p> 
+          </div>
+        
+    </form>
+  </div>
+  <div id="sideNav">
+    <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+           <li><a href="about.html">About</a></li>
+            <li><a href="what.html">What People Says</a></li>
+            <li><a href="contac.html">Contact Us</a></li> 
+            
+        </ul>
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="menu.jpg" id="menu">
+</div>
+  <script>
+    sideNav.style.right = "-250px";
+menuBtn.onclick = function(){ 
+    if(sideNav.style.right == "-250px"){
+        sideNav.style.right = "0";
+        menu.src = "close.png"
+    }
+    else{
+     sideNav.style.right = "-250px";
+     menu.src = "menu.jpg";
+     }
+ }
+</script> 
+</body>
+</html>

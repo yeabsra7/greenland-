@@ -1,0 +1,51 @@
+
+<html>
+    <head>
+        <title>Beautiful  Places</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section id="banner">
+        <img src="logo.jpg" class="logo"> 
+        <div class="banner-text">
+            <h1>Beautiful Places</h1>
+            <p>Planning on traveling this year?</p>
+            <div class="banner-btn">
+                <a href="index.html"><span></span>Sign in</a>
+                <a href="about.html"><span></span> Read More</a>
+            </div>
+        </div>
+        </section>
+        <div id="sideNav">
+            <nav>
+                <ul>
+                  <li><a href="about.html">About</a></li>
+                    <li><a href="what.html">What People Says</a></li>
+                    <li><a href="contac.html">Contact Us</a></li> 
+                    <li><a href="index.html">Sign up</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="menu.jpg" id="menu">
+        </div>
+       <script> 
+          
+          sideNav.style.right = "-250px";
+          menuBtn.onclick = function(){ 
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+              menu.src = "close.png"
+            }
+            else{
+             sideNav.style.right = "-250px";
+             menu.src = "menu.jpg";
+             }
+            }
+       </script>
+    </body>
+</html>
+       
+       

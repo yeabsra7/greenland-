@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Beautiful  Places</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+     </head>
+    <body> 
+        <div id="sideNav">
+            <nav>
+                <ul>
+                  <li><a href="home.html">Home</a></li>
+                   <li><a href="about.html">About</a></li>
+                    <li><a href="contac.html">Contact Us</a></li> 
+                    <li><a href="index.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="menu.jpg" id="menu">
+        </div>
+        <script>
+            sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){ 
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src = "close.png"
+            }
+            else{
+             sideNav.style.right = "-250px";
+             menu.src = "menu.jpg";
+             }
+         }
+       </script>  
+        <section id="service">
+            <div class="title-text">
+                <p>GREENLAND</p>
+                <h1>What People Says</h1>
+            </div>
+            <div class="service-row">
+              <div class="service-col">
+                <div class="user">
+                    <img src="rock.jpg">
+                    <div class="user-info">
+                        <h4>DWAYNE JOHNSON</h4>
+                        <small>@TheRock</small>
+                    </div>
+                </div>
+                <p>Green spaces are also crucial for the overall health and well-being of communities. 
+                    Studies have shown that access to green spaces can improve mental health, 
+                    reduce the risk of chronic diseases such as obesity and heart disease, 
+                    and even increase life expectancy.</p>
+               </div>
+               <div class="service-col">
+                 <div class="user">
+                    <img src="will.jpg">
+                    <div class="user-info">
+                        <h4>Willy Smith</h4>
+                        <small>@WillSmith2real</small>
+                    </div>
+                  </div>
+                 <p>Green spaces are also crucial for the overall health and well-being of communities. 
+                    Studies have shown that access to green spaces can improve mental health.
+                    </p>
+                </div>
+               <div class="service-col">
+                <div class="user">
+                    <img src="Jackie Chan.jpg">
+                    <div class="user-info">
+                        <h4>DWAYNE JOHNSON</h4>
+                        <small>@EyeOfJackieChan</small>
+                    </div>
+                </div>
+                <p>Green spaces are also crucial for the overall health and well-being of communities. 
+                    Studies have shown that access to green spaces can improve mental health, 
+                    reduce the risk of chronic diseases such as obesity and heart disease, 
+                    and even increase life expectancy.</p>
+               </div>
+            </div>
+        </section>
+         <div class="foot">
+            <footer>
+             &copy;2024 copyright reserved
+             <a href="index.html">Sign Up</a>
+            </footer>
+         </div> 
+    </body>
+</html>
